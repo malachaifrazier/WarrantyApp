@@ -23,3 +23,4 @@ If you have any ideas for features, spot any bugs in my dev code or just want to
 7. Investigate gems for Excel dumps?
 8. Heroku setup for hosting
 9. Write actual tests...RSpec?
+x10. Devise for User Model & Views 
