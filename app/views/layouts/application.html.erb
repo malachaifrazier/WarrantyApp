@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MagnetiApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="container">
+	
+	<% if flash[:notice] %>	
+		<div class="alert alert-info">
+		  <button type="button" class="close" data-dismiss="alert">×</button>
+		  <p> <%=flash[:notice] %> </p>
+		</div>
+	<% end %>
+
+	<% if flash[:alert] %>	
+			<div class="alert alert-error">
+			  <button type="button" class="close" data-dismiss="alert">×</button>
+			  <p> <%=flash[:alert] %> </p>
+			</div>
+		<% end %>
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>
