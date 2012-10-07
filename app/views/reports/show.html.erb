@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @report.type %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @report.summary %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @report.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

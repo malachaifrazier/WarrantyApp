@@ -1,5 +1,7 @@
 MagnetiApp::Application.routes.draw do
   
+  resources :reports
+
   devise_for :users
 
   get "home/index"
