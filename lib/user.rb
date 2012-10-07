@@ -1,8 +1,8 @@
 class User
-  
+  attr_accessor :first_name
 
-  def first_name
-    "Malachai"
+  def initialize
+    @first_name = "Malachai"
   end
 
 
