@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'user.rb'
+require './lib/user.rb'
 
 
 describe User do
