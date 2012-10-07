@@ -9,6 +9,12 @@ gem 'pg', '~> 0.14.1'
 gem 'devise'
 gem 'simple_form'
 
+
+# rspec scoping
+group :test, :development do
+  gem "rspec-rails", "~> 2.11.0"
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
