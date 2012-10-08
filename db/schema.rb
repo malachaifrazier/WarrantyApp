@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121007033830) do
+ActiveRecord::Schema.define(:version => 20121008023351) do
+
+  create_table "dealer_claims", :force => true do |t|
+    t.string   "pareto_type"
+    t.text     "summary"
+    t.string   "owner"
+    t.boolean  "status"
+    t.date     "notified"
+    t.date     "received"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "reports", :force => true do |t|
     t.string   "type"
