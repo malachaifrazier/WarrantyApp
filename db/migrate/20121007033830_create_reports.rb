@@ -4,9 +4,11 @@ class CreateReports < ActiveRecord::Migration
       t.string :type
       t.text :summary
       t.references :user
+      t.integer :user_id
 
       t.timestamps
     end
     add_index :reports, :user_id
+
   end
 end

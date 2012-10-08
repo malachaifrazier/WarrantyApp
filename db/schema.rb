@@ -20,9 +20,14 @@ ActiveRecord::Schema.define(:version => 20121008023351) do
     t.boolean  "status"
     t.date     "notified"
     t.date     "received"
+    t.integer  "user_id"
+    t.integer  "report_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  add_index "dealer_claims", ["report_id"], :name => "index_dealer_claims_on_report_id"
+  add_index "dealer_claims", ["user_id"], :name => "index_dealer_claims_on_user_id"
 
   create_table "reports", :force => true do |t|
     t.string   "type"

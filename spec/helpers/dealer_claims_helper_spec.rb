@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'dealer_claim.rb'
 
 # Specs in this file have access to a helper object that includes
 # the DealerClaimsHelper. For example:

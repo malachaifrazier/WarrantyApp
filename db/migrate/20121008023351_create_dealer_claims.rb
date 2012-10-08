@@ -7,8 +7,12 @@ class CreateDealerClaims < ActiveRecord::Migration
       t.boolean :status
       t.date :notified
       t.date :received
+      t.references :user
+      t.references :report
 
       t.timestamps
     end
+    add_index :dealer_claims, :user_id
+    add_index :dealer_claims, :report_id
   end
 end
