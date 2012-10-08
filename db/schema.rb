@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121008032909) do
+ActiveRecord::Schema.define(:version => 20121008034306) do
 
   create_table "dealer_claims", :force => true do |t|
     t.string   "pareto_type"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20121008032909) do
     t.integer  "dealer_claims_id"
   end
 
+  add_index "reports", ["dealer_claims_id"], :name => "index_reports_on_dealer_claims_id"
   add_index "reports", ["user_id"], :name => "index_reports_on_user_id"
 
   create_table "users", :force => true do |t|
