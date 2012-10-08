@@ -1,0 +1,16 @@
+<%= simple_form_for(@dealer_claim) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :pareto_type %>
+    <%= f.input :summary %>
+    <%= f.input :owner %>
+    <%= f.input :status %>
+    <%= f.input :notified %>
+    <%= f.input :received %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

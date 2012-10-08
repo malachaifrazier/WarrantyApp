@@ -1,5 +1,7 @@
 MagnetiApp::Application.routes.draw do
   
+  resources :dealer_claims
+
   resources :reports
 
   devise_for :users

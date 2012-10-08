@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pareto type:</b>
+  <%= @dealer_claim.pareto_type %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @dealer_claim.summary %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @dealer_claim.owner %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @dealer_claim.status %>
+</p>
+
+<p>
+  <b>Notified:</b>
+  <%= @dealer_claim.notified %>
+</p>
+
+<p>
+  <b>Received:</b>
+  <%= @dealer_claim.received %>
+</p>
+
+
+<%= link_to 'Edit', edit_dealer_claim_path(@dealer_claim) %> |
+<%= link_to 'Back', dealer_claims_path %>

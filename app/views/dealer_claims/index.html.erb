@@ -1,0 +1,33 @@
+<h1>Listing dealer_claims</h1>
+
+<table>
+  <tr>
+    <th>Pareto type</th>
+    <th>Summary</th>
+    <th>Owner</th>
+    <th>Status</th>
+    <th>Notified</th>
+    <th>Received</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dealer_claims.each do |dealer_claim| %>
+  <tr>
+    <td><%= dealer_claim.pareto_type %></td>
+    <td><%= dealer_claim.summary %></td>
+    <td><%= dealer_claim.owner %></td>
+    <td><%= dealer_claim.status %></td>
+    <td><%= dealer_claim.notified %></td>
+    <td><%= dealer_claim.received %></td>
+    <td><%= link_to 'Show', dealer_claim %></td>
+    <td><%= link_to 'Edit', edit_dealer_claim_path(dealer_claim) %></td>
+    <td><%= link_to 'Destroy', dealer_claim, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dealer claim', new_dealer_claim_path %>

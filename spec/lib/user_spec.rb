@@ -8,3 +8,8 @@ describe User do
 	user.first_name.should === "Malachai" 
 	end
 end
+
+describe User do
+	it "" do
+	end
+end

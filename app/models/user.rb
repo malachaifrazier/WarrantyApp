@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   # Associations go below below below
 
   has_many :reports
+  has_many :dealer_claims, :through => :reports
 
 
 
