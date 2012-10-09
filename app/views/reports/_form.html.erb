@@ -4,14 +4,15 @@
 		<%= simple_form_for(@report, html: {class: "well"}) do |f| %>
 		  <%= f.error_notification %>
 
-		  <div class="form-inputs">
-		  	<%= f.association :user, :label_method => :full_name %>
-		    <%= f.input :type, :placeholder => "8D, Dealer Claim...?" %>
-		    <%= f.input :summary %>
-		  </div>
+		  <div class="control-group">
+			  	<%= f.association :user, :label_method => :full_name %>
+			    <%= f.input :type, :placeholder => "8D, Dealer Claim...?" %>
+			    <%= f.input :summary %>
+			  
 
-		  <div class="form-actions">
-		    <%= f.button :submit %>
+			  <div class="form-actions">
+			    <%= f.button :submit %>
+			  </div>
 		  </div>
 
 		<% end %>
