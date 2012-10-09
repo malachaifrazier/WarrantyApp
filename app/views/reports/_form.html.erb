@@ -1,14 +1,21 @@
-<%= simple_form_for(@report) do |f| %>
-  <%= f.error_notification %>
+<div class= "row">
+	<div class= "span5">
 
-  <div class="form-inputs">
-  	<%= f.association :user %>
-    <%= f.input :type %>
-    <%= f.input :summary %>
-    
-  </div>
+		<%= simple_form_for(@report, html: {class: "well"}) do |f| %>
+		  <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+		  <div class="form-inputs">
+		  	<%= f.association :user, :label_method => :full_name %>
+		    <%= f.input :type, :placeholder => "8D, Dealer Claim...?" %>
+		    <%= f.input :summary %>
+		  </div>
+
+		  <div class="form-actions">
+		    <%= f.button :submit %>
+		  </div>
+
+		<% end %>
+
+	</div>
+
+</div>
