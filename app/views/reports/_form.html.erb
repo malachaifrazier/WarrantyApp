@@ -6,7 +6,7 @@
 
 		  <div class="control-group">
 			  	<%= f.association :user, :label_method => :full_name%>
-			    <%= f.input :type, :placeholder => "8D, Dealer Claim...?" %>
+			    <%= f.association :dealer_claim, :label_method => :pareto_type %>
 			    <%= f.input :summary, :input_html => {rows: 12} %>
 			  
 
