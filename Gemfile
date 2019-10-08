@@ -12,7 +12,7 @@ gem 'simple_form'
 
 # rspec scoping
 group :test, :development do
-  gem "rspec-rails", "~> 2.11.0"
+  gem "rspec-rails", "~> 3.9.0"
 end
 
 # Gems used only for assets and not required
